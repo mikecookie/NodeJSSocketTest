@@ -5,7 +5,7 @@
 process.title = 'node-chat';
 
 // Port where we'll run the websocket server
-var webSocketsServerPort = 81;
+var webSocketsServerPort = 8080;
 
 // websocket and http servers
 var webSocketServer = require('websocket').server;
@@ -38,7 +38,7 @@ colors.sort(function(a,b) { return Math.random() > 0.5; } );
  */
 var server = http.createServer(function(req, res) {
     // Not important for us. We're writing WebSocket server, not HTTP server
-	fs.readFile('websocket.html', function(err, data) {
+	fs.readFile('ws.html', function(err, data) {
 		res.writeHead(200, {'Content-Type': 'text/html'});
 		res.write(data);
 		return res.end();
