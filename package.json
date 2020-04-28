@@ -1,9 +1,9 @@
 {
   "main": "ws.js",
-  "scripts": {
-    "start": "node ws.js",
-  },
   "dependencies": {
     "websocket": "^1.0.31"
+  },
+  "scripts": {
+    "start": "node ws.js"
   }
 }
