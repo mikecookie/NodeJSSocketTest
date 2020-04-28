@@ -1,9 +1,11 @@
 {
-  "main": "ws.js",
+  "main": "ws2.js",
   "dependencies": {
-    "websocket": "^1.0.31"
+    //"websocket": "^1.0.31",
+    "express": "~4.17.1",
+    "socket.io": "~2.3.0"
   },
   "scripts": {
-    "start": "node ws.js"
+    "start": "node ws2.js"
   }
 }
